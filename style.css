@@ -7,7 +7,7 @@ h1 {
     text-align: center;
     color: #353535;
     font-size: 50px;
-    font-family: "Cormorant Garamond", serif;
+    font-family: "Cormorant Garamond", serif, 'Courier New', Courier, monospace;
 }
 
 p {
