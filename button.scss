@@ -1,0 +1,21 @@
+@import "./mixins";
+
+
+button {
+    @include shared-styles;
+    box-shadow: var(--shadow-drop);
+    cursor: pointer;
+
+    &:active {
+        box-shadow: var(--shadow-inner);
+        border-color: var(--color-shadow-light_0);
+    }
+
+    &>* {
+        vertical-align: middle;
+    }
+
+    &>span:last-child {
+        padding-left: 8px;
+    }
+}

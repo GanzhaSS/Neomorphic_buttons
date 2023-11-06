@@ -1,0 +1,27 @@
+@import "./settings-light-mode.css";
+button {
+  color: var(--color-text);
+  padding: 0 8px;
+  position: relative;
+  border: 3px solid var(--color-shadow-light_0);
+  outline: none;
+  text-align: center;
+  background-color: var(--color-bg);
+  transition: all 250ms ease-in-out;
+  box-shadow: var(--shadow-drop);
+  cursor: pointer;
+}
+button:hover {
+  box-shadow: none;
+  border-color: var(--color-shadow-light_100);
+}
+button:active {
+  box-shadow: var(--shadow-inner);
+  border-color: var(--color-shadow-light_0);
+}
+button > * {
+  vertical-align: middle;
+}
+button > span:last-child {
+  padding-left: 8px;
+}/*# sourceMappingURL=button.css.map */
