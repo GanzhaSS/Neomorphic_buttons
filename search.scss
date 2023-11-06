@@ -1,0 +1,21 @@
+@import "./mixins";
+
+// Search
+.search {
+    @include gridPlacement(column, 1, 3);
+    position: relative;
+
+    &__icon {
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        left: 28px;
+        transform: translateY(-50%);
+        stroke-width: 0.5px;
+    }
+
+    &__input {
+        padding: 0 60px;
+        text-align: left;
+    }
+}

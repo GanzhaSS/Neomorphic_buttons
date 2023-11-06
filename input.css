@@ -1,0 +1,46 @@
+@import "./settings-light-mode.css";
+input {
+  font-family: var(--fontFamily);
+  font-size: var(--fontSize);
+  font-weight: var(--fontWeight);
+  line-height: var(--fontSize);
+  color: var(--color-text);
+  padding: 0 8px;
+  position: relative;
+  border: 3px solid var(--color-shadow-light_0);
+  outline: none;
+  text-align: center;
+  background-color: var(--color-bg);
+  transition: all 250ms ease-in-out;
+  box-shadow: var(--shadow-inner);
+}
+input:hover {
+  box-shadow: none;
+  border-color: var(--color-shadow-light_100);
+}
+input:focus {
+  box-shadow: none;
+  border-color: var(--color-shadow-light_40);
+}
+input::-moz-placeholder {
+  font-family: var(--fontFamily);
+  font-size: var(--fontSize);
+  font-weight: var(--fontWeight);
+  line-height: var(--fontSize);
+  color: var(--color-text);
+  opacity: 1;
+}
+input::placeholder {
+  font-family: var(--fontFamily);
+  font-size: var(--fontSize);
+  font-weight: var(--fontWeight);
+  line-height: var(--fontSize);
+  color: var(--color-text);
+  opacity: 1;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--color-text);
+}/*# sourceMappingURL=input.css.map */

@@ -1,0 +1,63 @@
+@import "./mixins";
+
+// Graph
+@mixin lineHeights($barHeight, $fillHeight) {
+    height: $barHeight;
+
+    &:before {
+        height: $fillHeight;
+    }
+}
+
+.graph {
+    display: flex;
+    width: 250px;
+    align-items: flex-end;
+    @include gridPlacement(column, 3, 5);
+    @include gridPlacement(row, 3, 6);
+
+
+    &__line {
+        @include shared-styles;
+        width: 32px;
+        position: relative;
+        border-radius: 32px;
+        box-shadow: var(--shadow-inner);
+        background-color: var(--color-bg);
+
+        &:before {
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            border-radius: inherit;
+            background-color: var(--color-accent-blue);
+        }
+
+        &--one {
+            @extend .graph__line;
+            @include lineHeights(66%, 58%);
+        }
+
+        &--two {
+            @extend .graph__line;
+            @include lineHeights(90%, 80%);
+        }
+
+        &--three {
+            @extend .graph__line;
+            @include lineHeights(50%, 45%);
+        }
+
+        &--four {
+            @extend .graph__line;
+            @include lineHeights(100%, 83%);
+        }
+
+        &--five {
+            @extend .graph__line;
+            @include lineHeights(66%, 66%);
+        }
+    }
+}

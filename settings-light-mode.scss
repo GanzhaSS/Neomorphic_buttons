@@ -1,10 +1,10 @@
 :root {
-    --color-text: #75757538;
+    --color-text: #757575;
     --color-bg: #ebecf0;
 
 
-    --color-accent-blue: #1456f0;
-    --color-bright-blue: #38d8e0;
+    --color-accent-blue: #2470A0;
+    --color-bright-blue: #e038b6;
 
     --color-shadow-dark_40: #474f6166;
     --color-shadow-dark_100: #484f60;
@@ -23,4 +23,7 @@
     --height: 54px;
 
 
+    --fontFamily: Proxima Nova, monospace !important;
+    --fontSize: 18px;
+    --fontWeight: 700;
 }

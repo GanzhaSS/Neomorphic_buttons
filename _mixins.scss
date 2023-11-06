@@ -23,10 +23,10 @@
 }
 
 @mixin applyFontStyle() {
-    // font-family: $fontFamily;
-    // font-size: $fontSize;
-    // font-weight: $fontWeight;
-    // line-height: $fontSize;
+    font-family: var(--fontFamily);
+    font-size: var(--fontSize);
+    font-weight: var(--fontWeight);
+    line-height: var(--fontSize);
     color: var(--color-text);
 }
 

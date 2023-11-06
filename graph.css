@@ -1,0 +1,72 @@
+@import "./settings-light-mode.css";
+.graph {
+  display: flex;
+  width: 250px;
+  align-items: flex-end;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 6;
+}
+.graph__line, .graph__line--five, .graph__line--four, .graph__line--three, .graph__line--two, .graph__line--one {
+  font-family: var(--fontFamily);
+  font-size: var(--fontSize);
+  font-weight: var(--fontWeight);
+  line-height: var(--fontSize);
+  color: var(--color-text);
+  padding: 0 8px;
+  position: relative;
+  border: 3px solid var(--color-shadow-light_0);
+  outline: none;
+  text-align: center;
+  background-color: var(--color-bg);
+  transition: all 250ms ease-in-out;
+  width: 32px;
+  position: relative;
+  border-radius: 32px;
+  box-shadow: var(--shadow-inner);
+  background-color: var(--color-bg);
+}
+.graph__line:hover, .graph__line--five:hover, .graph__line--four:hover, .graph__line--three:hover, .graph__line--two:hover, .graph__line--one:hover {
+  box-shadow: none;
+  border-color: var(--color-shadow-light_100);
+}
+.graph__line:before, .graph__line--five:before, .graph__line--four:before, .graph__line--three:before, .graph__line--two:before, .graph__line--one:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: inherit;
+  background-color: var(--color-accent-blue);
+}
+.graph__line--one {
+  height: 66%;
+}
+.graph__line--one:before {
+  height: 58%;
+}
+.graph__line--two {
+  height: 90%;
+}
+.graph__line--two:before {
+  height: 80%;
+}
+.graph__line--three {
+  height: 50%;
+}
+.graph__line--three:before {
+  height: 45%;
+}
+.graph__line--four {
+  height: 100%;
+}
+.graph__line--four:before {
+  height: 83%;
+}
+.graph__line--five {
+  height: 66%;
+}
+.graph__line--five:before {
+  height: 66%;
+}/*# sourceMappingURL=graph.css.map */

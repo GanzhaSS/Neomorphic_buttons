@@ -1,10 +1,12 @@
 @import "./settings-light-mode.css";
 @import "./settings-light-mode.css";
 @import "./button.css";
-p {
-  color: var(--color-text);
-}
-
+@import "./input.css";
+@import "./toggle.css";
+@import "./radio.css";
+@import "./graph.css";
+@import "./search.css";
+@import "./progress_bar.css";
 *,
 *:before,
 *:after {
@@ -34,56 +36,4 @@ p {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-}
-
-input {
-  color: var(--color-text);
-  padding: 0 8px;
-  position: relative;
-  border: 3px solid var(--color-shadow-light_0);
-  outline: none;
-  text-align: center;
-  background-color: var(--color-bg);
-  transition: all 250ms ease-in-out;
-  box-shadow: var(--shadow-inner);
-}
-input:hover {
-  box-shadow: none;
-  border-color: var(--color-shadow-light_100);
-}
-input:focus {
-  box-shadow: none;
-  border-color: rgba(var(--color-shadow-light), 0.5);
-}
-input::-moz-placeholder {
-  color: var(--color-text);
-  opacity: 1;
-}
-input::placeholder {
-  color: var(--color-text);
-  opacity: 1;
-}
-
-.icon {
-  width: 24px;
-  height: 24px;
-  fill: var(--color-text);
-}
-
-.square-lg {
-  width: 100%;
-  height: 100%;
-  grid-row-start: 1;
-  grid-row-end: 3;
-  position: relative;
-  border-radius: 24px;
-  font-size: 64px;
-}
-.square-lg__gradient-text {
-  width: 100%;
-  height: 64px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }/*# sourceMappingURL=style.css.map */

@@ -1,8 +1,8 @@
 :root {
-  --color-text: #75757538;
+  --color-text: #757575;
   --color-bg: #ebecf0;
-  --color-accent-blue: #1456f0;
-  --color-bright-blue: #38d8e0;
+  --color-accent-blue: #2470A0;
+  --color-bright-blue: #e038b6;
   --color-shadow-dark_40: #474f6166;
   --color-shadow-dark_100: #484f60;
   --color-shadow-light_0: #53090900;
@@ -13,4 +13,7 @@
   --shadow-inner: inset -4px -4px 6px -1px var(--color-shadow-light_100),
       inset 2px 2px 8px -1px var(--color-shadow-dark_40);
   --height: 54px;
+  --fontFamily: Proxima Nova, monospace !important;
+  --fontSize: 18px;
+  --fontWeight: 700;
 }/*# sourceMappingURL=settings-light-mode.css.map */

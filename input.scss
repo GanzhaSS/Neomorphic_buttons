@@ -1,0 +1,21 @@
+@import "./mixins";
+
+input {
+    @include shared-styles;
+    box-shadow: var(--shadow-inner);
+
+    &:focus {
+        box-shadow: none;
+        border-color: var(--color-shadow-light_40);
+    }
+
+    &::placeholder {
+        @include applyFontStyle;
+        opacity: 1;
+    }
+}
+
+.icon {
+    @include size(24px);
+    fill: var(--color-text);
+}
